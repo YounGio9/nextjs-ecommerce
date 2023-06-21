@@ -31,7 +31,7 @@ function View(): React.JSX.Element {
             </span>
          </p>
          <p className='flex gap-x-3 items-center ml-2 text-xs font-medium'>
-            <span>LIVRAISON OFFERTE</span>
+            <span>LIVRAISON 24H</span>
             <span>
                <svg
                   width='24'

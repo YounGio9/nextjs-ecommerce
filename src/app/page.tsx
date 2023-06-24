@@ -58,16 +58,16 @@ export default function Home(): React.JSX.Element {
                      <Image
                         src={logo}
                         alt=''
-                        width={1000}
-                        height={1000}
+                        width={200}
+                        height={200}
                         className='w-[150px] -mt-10 h-auto hidden lg:block'
                      />
                      <div className='flex justify-center items-center mt-6 w-16 h-0 lg:hidden'>
                         <Image
                            src={logo}
                            alt=''
-                           width={1000}
-                           height={1000}
+                           width={200}
+                           height={200}
                            className='w-100 h-auto'
                         />
                      </div>

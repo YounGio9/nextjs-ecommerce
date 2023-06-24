@@ -22,8 +22,8 @@ function Club() {
                   <Image
                      alt=''
                      src={image.src}
-                     width='1000'
-                     height={1000}
+                     width='200'
+                     height={200}
                      className='w-80 h-auto lg:ml-6 -rotate-6'
                   />
                </div>

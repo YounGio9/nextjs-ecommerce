@@ -19,8 +19,8 @@ function Presentation() {
                <span className='w-full'>
                   <Image
                      src={cover.src}
-                     width='1000'
-                     height={"1000"}
+                     width='1100'
+                     height={"600"}
                      alt=''
                      className='w-full h-auto object-top object-cover'
                   />
@@ -61,8 +61,8 @@ function Presentation() {
                         <Image
                            src={cover.src}
                            alt=''
-                           width={"1000"}
-                           height='1000'
+                           width={"200"}
+                           height='200'
                            className='w-full h-auto'
                         />
                      </span>

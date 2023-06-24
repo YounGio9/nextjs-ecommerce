@@ -12,6 +12,7 @@ import ShopppingList from "./ShoppingList"
 function BestSales(): React.JSX.Element {
    const router = useRouter()
 
+   bestSellers.splice(0, 2)
    return (
       <>
          <ShopppingList articles={bestSellers} title='Nos meilleurs articles' />

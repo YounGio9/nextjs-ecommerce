@@ -2,7 +2,7 @@
 import React from "react"
 import { BsChevronDown, BsChevronRight, BsInstagram, BsWhatsapp } from "react-icons/bs"
 import CustomButtom from "./CustomButtom"
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.jpg"
 import Image from "next/image"
 
 interface menu {

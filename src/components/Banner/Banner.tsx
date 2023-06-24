@@ -74,7 +74,7 @@ function Banner(): React.JSX.Element {
             )}
             <Link href={"/"} className='text-3xl font-bold'>
                <div className={`flex flex-col items-center font-semibold font-header`}>
-                  <span>bags.club</span>
+                  <span>LuxuryGreen</span>
                </div>
             </Link>
             <div className='hidden lg:flex gap-x-6'>

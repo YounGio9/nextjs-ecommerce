@@ -28,7 +28,7 @@ export default function Home(): React.JSX.Element {
                Louer <span className='italic font-normal'>vs </span>acheter
             </h2>
             <p className='mt-6 text-base font-normal'>
-               Si tu hésites encore à passer chez bags.club, on croit qu’on a les
+               Si tu hésites encore à passer chez LuxuryGreen, on croit qu’on a les
                arguments.
             </p>
          </div>

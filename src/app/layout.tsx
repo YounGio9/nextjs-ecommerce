@@ -12,8 +12,8 @@ import "swiper/css/scrollbar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-   title: "swagg Republic",
-   description: "Official website of swag republic",
+   title: "LuxuryGreen",
+   description: "Le site officiel de LuxuryGreen",
 }
 
 /**

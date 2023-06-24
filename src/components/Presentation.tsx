@@ -35,18 +35,15 @@ function Presentation() {
                      Ton sac a partir de &nbsp;
                      <span className='font-semibold'>15,99 €/mois</span>
                   </p>
-                  <a
-                     href='# '
-                     className='my-12 flex justify-center lg:justify-start w-full'
-                  >
+                  <div className='my-12 flex justify-center lg:justify-start w-full'>
                      <CustomButtom
                         background='yellow'
                         color='black'
                         handleClick={() => router.push("/shop")}
                      >
-                        <span className=' mb-14'>Open the store</span>
+                        <span className=' mb-14'>Choisis le sac de tes reves</span>
                      </CustomButtom>
-                  </a>
+                  </div>
                </div>
                <hr className='h-0 border-t w-full border-black'></hr>
                <div className='flex relative justify-center items-center  p-8 w-full max-w-3xl lg:px-16'>

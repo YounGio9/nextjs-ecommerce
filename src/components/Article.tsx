@@ -8,9 +8,9 @@ import React from "react"
  * @param {types.Article} Article Article infos
  * @return {React.JSX.Element}: Article Component
  */
-function Article({ name, isNew, cover, colors, price, apport }: types.Article) {
+function Article({ name, isNew, cover, colors, price, id, apport }: types.Article) {
    return (
-      <Link href={`/bags/${name}`}>
+      <Link href={`/bags/${id}`}>
          <div className='flex relative flex-col-reverse'>
             <div className='absolute top-1 left-1 border rounded-lg border-black w-full h-full'></div>
             <div

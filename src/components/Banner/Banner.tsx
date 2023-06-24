@@ -1,9 +1,14 @@
 "use client"
 
+import XIcon from "@/assets/svg/XIcon"
+import User from "@/assets/svg/User"
 import { useBannerContext } from "@/contexts/BannerContext"
 import Link from "next/link"
 import React from "react"
+import CustomButtom from "../CustomButtom"
 import SpecialBanner from "./SpecialBanner"
+import Redirect from "@/assets/svg/Redirect"
+import { FaBars } from "react-icons/fa"
 
 /**
  * Banner Component that include navigation links and website logo
@@ -32,23 +37,7 @@ function Banner(): React.JSX.Element {
                      onClick={toggleMenu}
                      className={`flex justify-between lg:hidden`}
                   >
-                     <svg
-                        width='30'
-                        height='30'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                        role='img'
-                     >
-                        <g clipPath='url(#cross_svg__a)' fill='#000'>
-                           <path d='M23.839 4.643 4.394 24.09l1.767 1.768L25.607 6.41l-1.768-1.768Z'></path>
-                           <path d='M25.607 23.588 6.16 4.142 4.393 5.91 23.84 25.355l1.768-1.767Z'></path>
-                        </g>
-                        <defs>
-                           <clipPath id='cross_svg__a'>
-                              <path fill='#fff' d='M0 0h30v30H0z'></path>
-                           </clipPath>
-                        </defs>
-                     </svg>
+                     <XIcon />
                   </button>
                </div>
             ) : (
@@ -57,18 +46,7 @@ function Banner(): React.JSX.Element {
                      onClick={toggleMenu}
                      className={`flex justify-between lg:hidden `}
                   >
-                     <svg
-                        width='30'
-                        height='30'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                        role='img'
-                     >
-                        <path
-                           d='M28.75 13.75H1.25v2.5h27.5v-2.5ZM28.75 5H1.25v2.5h27.5V5ZM28.75 22.5H1.25V25h27.5v-2.5Z'
-                           fill='#000'
-                        ></path>
-                     </svg>
+                     <FaBars size={25} />
                   </button>
                </div>
             )}
@@ -89,39 +67,12 @@ function Banner(): React.JSX.Element {
                ))}
             </div>
             <div className='flex relative items-center ml-2'>
-               {/* <CustomButtom color='black' background='white'>
+               <CustomButtom color='black' background='white'>
                   <div className='flex flex-row items-center gap-x-2'>
-                     <svg
-                        width='24'
-                        height='24'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                        role='img'
-                     >
-                        <path
-                           d='M19 20.486v-.745a3 3 0 0 0-1.512-2.605l-3.219-1.842M9.727 15.292l-3.215 1.844A3 3 0 0 0 5 19.741v.745'
-                           stroke='#000'
-                           strokeWidth='2'
-                           strokeMiterlimit='10'
-                        ></path>
-                        <path
-                           d='M12 16a4 4 0 0 1-4-4v-2a4 4 0 0 1 8 0v2a4 4 0 0 1-4 4Z'
-                           stroke='#000'
-                           strokeWidth='2'
-                           strokeMiterlimit='10'
-                           strokeLinecap='square'
-                        ></path>
-                        <path
-                           d='M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11Z'
-                           stroke='#000'
-                           strokeWidth='2'
-                           strokeMiterlimit='10'
-                           strokeLinecap='square'
-                        ></path>
-                     </svg>
+                     <User />
                      <span className='hidden lg:block'>Espace membre</span>
                   </div>
-               </CustomButtom> */}
+               </CustomButtom>
             </div>
          </div>
          <div
@@ -134,27 +85,10 @@ function Banner(): React.JSX.Element {
                   key={link}
                   className='flex gap-6 items-center text-2xl font-medium lg:text-lg'
                   href={`/${link}`}
+                  onClick={toggleMenu}
                >
                   {name}
-                  <svg
-                     width='20'
-                     height='20'
-                     fill='none'
-                     xmlns='http://www.w3.org/2000/svg'
-                     role='img'
-                     className='lg:hidden'
-                  >
-                     <path
-                        d='M3.832 6.17v.5h7.129l-8.315 8.313-.353.354.353.354 2.663 2.663.354.353.354-.353 8.314-8.315v7.13H19.5V1.5H3.832v4.67Z'
-                        fill='#000'
-                        stroke='#000'
-                     ></path>
-                     <path
-                        d='M2.832 5.17v.5H9.96l-8.315 8.313-.353.354.353.354 2.663 2.663.354.353.354-.353 8.314-8.315v7.13H18.5V.5H2.832v4.67Z'
-                        fill='#fff'
-                        stroke='#000'
-                     ></path>
-                  </svg>
+                  <Redirect />
                </Link>
             ))}
             {/* <CustomButtom color='white' background='red'>

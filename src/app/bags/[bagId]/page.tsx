@@ -2,19 +2,26 @@
 import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from "swiper"
-import article from "../../../assets/sweet.jpg"
 import Image from "next/image"
 import CustomButtom from "@/components/CustomButtom"
 import ShopppingList from "@/components/ShoppingList"
 import { bestSellers } from "../../../db/bestSellers"
 import { useRouter } from "next/navigation"
 import Knowing from "@/components/Knowing"
+import { Article } from "@/helpers/types"
+import { types } from "@/helpers"
+import cover from "../../../assets/swag-cover.jpg"
 
 /**
  * Return single article page
  * @return {React.JSX.Element}:
  */
 function ArticlePage({ params }: { params: { bagId: string } }) {
+   const bagId = parseInt(params.bagId)
+
+   const article = bestSellers.find(
+      (article) => (article.id as number) === bagId
+   ) as Article
    const router = useRouter()
    return (
       <>
@@ -29,18 +36,18 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                   onSlideChange={() => console.log("slide change")}
                   onSwiper={(swiper) => console.log(swiper)}
                >
-                  {Array(4)
+                  {Array(1)
                      .fill(article)
-                     .map((img, idx) => (
+                     .map((img: types.Article, idx) => (
                         <SwiperSlide
                            key={idx}
                            className=' flex items-center justify-center mt-8'
                         >
                            <Image
                               width='200'
-                              key={img.src}
+                              key={img.cover}
                               height='100'
-                              src={img.src}
+                              src={img.cover}
                               alt={""}
                               className='h-auto w-[200px]'
                            />
@@ -54,7 +61,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                <div className='flex flex-col gap-4 items-start p-8 lg:w-full'>
                   <span>
                      Ton nouveau sac s’appelle <br />
-                     <strong className='font-semibold'>iPhone 13</strong>
+                     <strong className='font-semibold'> {article.name} </strong>
                   </span>
                   <p className='mt-2 bg-swag-yellow'>
                      <span className='text-3xl font-bold'>37,90&nbsp;€</span>
@@ -287,9 +294,9 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                      Remplacement en 48h, le plus rapide jamais fait
                   </h2>
 
-                  <div className='relative w-full h-80 lg:hidden overflow-hidden'>
+                  <div className='relative w-full h-auto lg:hidden overflow-hidden'>
                      <Image
-                        src={article.src}
+                        src={cover.src}
                         width={"1000"}
                         height={"1000"}
                         className='w-full h-auto'

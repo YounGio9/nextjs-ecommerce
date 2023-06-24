@@ -8,6 +8,7 @@ import Montorgeuil from "../assets/SacLouisVuittonMontorgeuil.jpg"
 
 export const bestSellers: types.Article[] = [
    {
+      id: 1,
       name: "Sac Louis Vuitton Beverly",
       cover: Beverly.src,
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],
@@ -17,6 +18,7 @@ export const bestSellers: types.Article[] = [
       categories: ["Louis Vuitton"],
    },
    {
+      id: 2,
       name: "Sac Louis Vuitton Boston",
       cover: Boston.src,
       colors: ["#41464C", "#60AEE1", "#F5C6BD", "#F5F6EF"],
@@ -26,6 +28,7 @@ export const bestSellers: types.Article[] = [
       categories: ["Louis Vuitton"],
    },
    {
+      id: 3,
       name: "Sac Louis Vuitton Butterfly",
       cover: Butterfly.src,
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],
@@ -35,6 +38,7 @@ export const bestSellers: types.Article[] = [
       categories: ["Louis Vuitton"],
    },
    {
+      id: 4,
       name: "Sac Louis Vuitton Keepall",
       cover: Keepall.src,
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],
@@ -44,6 +48,7 @@ export const bestSellers: types.Article[] = [
       categories: ["Louis Vuitton"],
    },
    {
+      id: 5,
       name: "Sac Louis Vuitton Monogram Alma",
       cover: Alma.src,
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],
@@ -53,6 +58,7 @@ export const bestSellers: types.Article[] = [
       categories: ["Louis Vuitton"],
    },
    {
+      id: 6,
       name: "Sac Louis Vuitton Montorgeuil",
       cover: Montorgeuil.src,
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],

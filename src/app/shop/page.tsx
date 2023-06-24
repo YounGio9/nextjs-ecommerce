@@ -20,7 +20,7 @@ function Shop() {
    return (
       <div className='min-h-[88vh] mb-14'>
          <ShopppingList
-            title='Nos vetements'
+            title='Nos sacs'
             articles={totalArticles}
             categories={filteredCategories}
          />

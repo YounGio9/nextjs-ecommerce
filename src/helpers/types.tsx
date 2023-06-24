@@ -12,4 +12,5 @@ export interface Article {
    price: string
    apport: string
    categories: string[]
+   id?: number
 }

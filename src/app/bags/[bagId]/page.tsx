@@ -11,6 +11,8 @@ import Knowing from "@/components/Knowing"
 import { Article } from "@/helpers/types"
 import { types } from "@/helpers"
 import cover from "../../../assets/swag-cover.jpg"
+import Checked from "@/assets/svg/Checked"
+import Failed from "@/assets/svg/Failed"
 
 /**
  * Return single article page
@@ -153,14 +155,14 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                                  stroke='#000'
                                  stroke-width='2'
                                  stroke-miterlimit='10'
-                                 stroke-linecap='square'
+                                 strokeLinecap='square'
                               ></path>
                               <path
                                  d='M21 3H3a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z'
                                  stroke='#000'
                                  stroke-width='2'
                                  stroke-miterlimit='10'
-                                 stroke-linecap='square'
+                                 strokeLinecap='square'
                               ></path>
                            </svg>
                         </div>
@@ -186,7 +188,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                                  stroke='#000'
                                  stroke-width='2'
                                  stroke-miterlimit='10'
-                                 stroke-linecap='square'
+                                 strokeLinecap='square'
                               ></path>
                            </svg>
                         </div>
@@ -227,7 +229,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                                  stroke='#000'
                                  stroke-width='2'
                                  stroke-miterlimit='10'
-                                 stroke-linecap='square'
+                                 strokeLinecap='square'
                               ></path>
                               <path
                                  d='M17.829 18H23v-6l-4-2-1-4h-8v12h2.171'
@@ -240,7 +242,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                                  stroke='#000'
                                  stroke-width='2'
                                  stroke-miterlimit='10'
-                                 stroke-linecap='square'
+                                 strokeLinecap='square'
                               ></path>
                            </svg>
                         </div>
@@ -264,11 +266,11 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                                  <path d='M17.873 11.81 22 20l-4-1-2 3-3.275-7.037M6.127 11.81 2 20l4-1 2 3 3.275-7.037'></path>
                                  <path
                                     d='M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z'
-                                    stroke-linecap='square'
+                                    strokeLinecap='square'
                                  ></path>
                                  <path
                                     d='M12 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z'
-                                    stroke-linecap='square'
+                                    strokeLinecap='square'
                                  ></path>
                               </g>
                               <defs>
@@ -323,128 +325,23 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                            <div className='relative rounded-lg border transform-gpu border-black bg-white drop-shadow-black p-6 bg-white rounded-lg lg:block'>
                               <ul className='flex flex-col gap-y-4'>
                                  <li className='flex gap-x-3'>
-                                    <svg
-                                       width='33'
-                                       height='26'
-                                       fill='none'
-                                       xmlns='http://www.w3.org/2000/svg'
-                                       role='img'
-                                    >
-                                       <path
-                                          d='m2 13.267 3-2.934 6 4.4S17.6 6.667 30.5 3L32 5.933S17.9 12.387 11 25L2 13.267Z'
-                                          fill='#000'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                       <path
-                                          d='m1 11.267 3-2.934 6 4.4S16.6 4.667 29.5 1L31 3.933S16.9 10.387 10 23L1 11.267Z'
-                                          fill='#FFFD70'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                    </svg>
+                                    <Checked />
                                     Vol avec aggression
                                  </li>
                                  <li className='flex gap-x-3'>
-                                    <svg
-                                       width='33'
-                                       height='26'
-                                       fill='none'
-                                       xmlns='http://www.w3.org/2000/svg'
-                                       role='img'
-                                    >
-                                       <path
-                                          d='m2 13.267 3-2.934 6 4.4S17.6 6.667 30.5 3L32 5.933S17.9 12.387 11 25L2 13.267Z'
-                                          fill='#000'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                       <path
-                                          d='m1 11.267 3-2.934 6 4.4S16.6 4.667 29.5 1L31 3.933S16.9 10.387 10 23L1 11.267Z'
-                                          fill='#FFFD70'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                    </svg>
+                                    <Checked />
                                     Vol avec effraction
                                  </li>
                                  <li className='flex gap-x-3'>
-                                    <svg
-                                       width='33'
-                                       height='26'
-                                       fill='none'
-                                       xmlns='http://www.w3.org/2000/svg'
-                                       role='img'
-                                    >
-                                       <path
-                                          d='m2 13.267 3-2.934 6 4.4S17.6 6.667 30.5 3L32 5.933S17.9 12.387 11 25L2 13.267Z'
-                                          fill='#000'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                       <path
-                                          d='m1 11.267 3-2.934 6 4.4S16.6 4.667 29.5 1L31 3.933S16.9 10.387 10 23L1 11.267Z'
-                                          fill='#FFFD70'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                    </svg>
+                                    <Checked />
                                     Vol a la tire ou a la sauvette
                                  </li>
                                  <li className='flex gap-x-3'>
-                                    <svg
-                                       width='33'
-                                       height='26'
-                                       fill='none'
-                                       xmlns='http://www.w3.org/2000/svg'
-                                       role='img'
-                                    >
-                                       <path
-                                          d='m2 13.267 3-2.934 6 4.4S17.6 6.667 30.5 3L32 5.933S17.9 12.387 11 25L2 13.267Z'
-                                          fill='#000'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                       <path
-                                          d='m1 11.267 3-2.934 6 4.4S16.6 4.667 29.5 1L31 3.933S16.9 10.387 10 23L1 11.267Z'
-                                          fill='#FFFD70'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                    </svg>
+                                    <Checked />
                                     Couverture mondiale
                                  </li>
                                  <li className='flex gap-x-3'>
-                                    <svg
-                                       width='27'
-                                       height='28'
-                                       fill='none'
-                                       xmlns='http://www.w3.org/2000/svg'
-                                       role='img'
-                                    >
-                                       <path
-                                          d='m26 23-8-8 8-8-4-4-8 8-8-8-4 4 8 8-8 8 4 4 8-8 8 8 4-4Z'
-                                          fill='#000'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                       <path
-                                          d='m25 21-8-8 8-8-4-4-8 8-8-8-4 4 8 8-8 8 4 4 8-8 8 8 4-4Z'
-                                          fill='#fff'
-                                          stroke='#000'
-                                          stroke-miterlimit='10'
-                                          stroke-linecap='square'
-                                       ></path>
-                                    </svg>
+                                    <Failed />
                                     Hors vol par negligence ou perte
                                  </li>
                               </ul>
@@ -462,7 +359,10 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                </div>
             </div>
          </div>
-         <ShopppingList title='Nos autres sacs' articles={bestSellers} />
+         <ShopppingList
+            title='Nos autres sacs'
+            articles={bestSellers.slice().splice(0, 4)}
+         />
          <div className='flex justify-center mb-6'>
             <CustomButtom
                color='black'

@@ -4,11 +4,22 @@ import { BsChevronDown, BsChevronRight, BsInstagram, BsWhatsapp } from "react-ic
 import CustomButtom from "./CustomButtom"
 import logo from "../assets/logo.jpg"
 import Image from "next/image"
+import Link from "next/link"
 
 interface menu {
    name: string
    label: string
-   options: string[]
+   options: { name: string; path: string }[]
+}
+
+export const toggle = (
+   menuName: string | number,
+   menus: (string | number)[],
+   setMenus: React.Dispatch<React.SetStateAction<any>>
+): void => {
+   if (menus.includes(menuName))
+      setMenus((prev: (string | number)[]) => prev.filter((name) => name != menuName))
+   else setMenus((prev: (string | number)[]) => [...prev, menuName])
 }
 /**
  *
@@ -23,19 +34,21 @@ function Footer() {
       {
          name: "infos",
          label: "A propos du club",
-         options: ["Le club", "Le blob", "FAQ"],
+         options: [
+            { name: "Le club", path: "/club" },
+            { name: "Le blog", path: "/blog" },
+            { name: "FAQ", path: "questions" },
+         ],
       },
       {
          name: "rental",
          label: "Location",
-         options: ["Location sacs de louis vuitton", "Location sac a bas prix"],
+         options: [
+            { name: "Location sacs de louis vuitton", path: "/shop" },
+            { name: "Location sac a bas prix", path: "/shop" },
+         ],
       },
    ]
-   const toggle = (menuName: string): void => {
-      if (activeMenus.includes(menuName))
-         setActiveMenus((prev) => prev.filter((name) => name != menuName))
-      else setActiveMenus((prev) => [...prev, menuName])
-   }
    return (
       <footer className='w-full bg-swag-yellow flex flex-col font-bold lg:px-28 lg:pb-6 text-lg'>
          <div className='flex flex-col lg:flex-row'>
@@ -133,7 +146,7 @@ function Footer() {
                <div className='w-full' key={name + JSON.stringify(options)}>
                   <button
                      className='border-t pt-2 pb-1 w-full text-left border-x-0 border-black flex items-center justify-between'
-                     onClick={() => toggle(name)}
+                     onClick={() => toggle(name, activeMenus, setActiveMenus)}
                   >
                      <span className='flex items-center text-center'>{label}</span>
                      {activeMenus.includes(name) ? <BsChevronDown /> : <BsChevronRight />}
@@ -142,7 +155,7 @@ function Footer() {
                   {activeMenus.includes(name) && (
                      <div className='grid gap-4 font-normal'>
                         {options.map((option) => (
-                           <span key={option}>{option} </span>
+                           <span key={option.name}>{option.name} </span>
                         ))}
                      </div>
                   )}
@@ -158,7 +171,9 @@ function Footer() {
 
                   <div className='grid gap-4 font-normal'>
                      {options.map((option) => (
-                        <span key={option}>{option} </span>
+                        <Link key={option.name} href={option.path}>
+                           <span key={option.name}>{option.name} </span>
+                        </Link>
                      ))}
                   </div>
                </div>
@@ -168,7 +183,7 @@ function Footer() {
          <hr className='border-black hidden w-full my-6 px-6 lg:inline-block' />
          <div className='w-full text-center flex flex-col lg:flex-row lg:justify-between gap-4 mb-16'>
             <span className='font-normal text-sm'>
-               Copyright &copy; 2023 Bags Club SAS{" "}
+               Copyright &copy; 2023 LuxuryGreen SAS{" "}
             </span>
             <div className='font-normal text-sm flex lg:flex-row flex-col gap-1'>
                <span className='underline underline-offset-2 decoration-slate-700'>

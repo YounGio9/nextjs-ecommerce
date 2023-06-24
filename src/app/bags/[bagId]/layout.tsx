@@ -1,3 +1,5 @@
+import { bestSellers } from "@/db/bestSellers"
+import { types } from "@/helpers"
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import React from "react"
@@ -15,7 +17,9 @@ export async function generateMetadata({
    if (!params.bagId) return notFound()
 
    return {
-      title: params.bagId,
+      title: bestSellers.find(
+         (article: types.Article) => (article.id as number) == +params.bagId
+      )?.name,
       description: "Article description",
       //   openGraph: {
       //     images: [

@@ -14,3 +14,9 @@ export interface Article {
    categories: string[]
    id?: number
 }
+
+export type question = {
+   id: number
+   question: string
+   answer: string
+}

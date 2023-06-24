@@ -14,7 +14,7 @@ function Club() {
             <p className='w-fit text-4xl font-bold text-center lg:mb-12 lg:text-6xl lg:whitespace-nowrap'>
                Sérieux,
                <br className='lg:hidden' /> à quoi ça sert <br />
-               d’acheter son tel ?
+               d’acheter son sac ?
             </p>
             <div className='flex flex-col w-full lg:flex-row-reverse'>
                <div className='relative my-8 w-full h-auto lg:basis-4/5 lg:my-0 lg:h-80'>

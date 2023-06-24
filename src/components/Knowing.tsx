@@ -26,7 +26,7 @@ function Knowing() {
                <div className=' bg-white py-9 px-6 lg:py-11 lg:px-24'>
                   <h1 className='text-2xl font-bold'> L’histoire de notre club</h1>
                   <h2 className='text-lg text-gray-700'>
-                     Sérieux, à quoi ça sert d’acheter ton tel ? Notre mission : en finir
+                     Sérieux, à quoi ça sert d’acheter ton sac ? Notre mission : en finir
                      avec l’achat !
                   </h2>
                   <a href='/club'>

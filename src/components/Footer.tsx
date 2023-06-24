@@ -155,7 +155,9 @@ function Footer() {
                   {activeMenus.includes(name) && (
                      <div className='grid gap-4 font-normal'>
                         {options.map((option) => (
-                           <span key={option.name}>{option.name} </span>
+                           <Link key={option.name} href={option.path}>
+                              <span key={option.name}>{option.name} </span>
+                           </Link>
                         ))}
                      </div>
                   )}

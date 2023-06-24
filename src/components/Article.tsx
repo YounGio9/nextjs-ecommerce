@@ -17,7 +17,9 @@ function Article({ name, isNew, cover, colors, price, apport }: types.Article) {
                className='relative rounded-lg border transform-gpu border-black bg-white 
             hover:shadow-[4px_4px_black] flex flex-col gap-4 items-center pt-4 lg:pt-9'
             >
-               <div className='font-bold lg:text-2xl w-[150px] text-center'>{name}</div>
+               <div className='font-bold lg:text-2xl w-[170px] lg:w-[280px] text-center'>
+                  {name}
+               </div>
                <div className='relative flex justify-center items-center mx-7 w-28 h-36 lg:mx-14 lg:w-44 lg:h-60'>
                   <span>
                      <Image

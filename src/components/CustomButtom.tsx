@@ -1,6 +1,6 @@
 import React from "react"
 
-type background = "yellow" | "red" | "white"
+type background = "yellow" | "red" | "white" | "blue"
 type color = "white" | "black"
 
 interface Props {
@@ -25,6 +25,8 @@ function CustomButtom({ children, background, color, rounded, handleClick }: Pro
             return "bg-white"
          case "yellow":
             return "bg-swag-yellow"
+         case "blue":
+            return "bg-cornflower-blue"
          default:
             return "bg-transparent"
       }

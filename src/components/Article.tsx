@@ -1,4 +1,5 @@
 import { types } from "@/helpers"
+import Link from "next/link"
 import React from "react"
 
 /**
@@ -8,7 +9,7 @@ import React from "react"
  */
 function Article({ name, isNew, cover, colors, price, apport }: types.Article) {
    return (
-      <a href='# '>
+      <Link href={`/bags/${name}`}>
          <div className='flex relative flex-col-reverse'>
             <div className='absolute top-1 left-1 border rounded-lg border-black w-full h-full'></div>
             <div
@@ -62,7 +63,7 @@ function Article({ name, isNew, cover, colors, price, apport }: types.Article) {
                </div>
             </div>
          </div>
-      </a>
+      </Link>
    )
 }
 

@@ -46,3 +46,12 @@ body {
    --tw-bg-opacity: 1;
    background-color: rgb(125 137 255 / var(--tw-bg-opacity));
 }
+
+.swiper-slide {
+   display: flex !important;
+   width: 100% !important;
+}
+
+.swiper-pagination {
+   position: relative !important;
+}

@@ -14,7 +14,7 @@ function BestSales(): React.JSX.Element {
 
    return (
       <>
-         <ShopppingList articles={bestSellers} name='Nos meilleurs articles' />
+         <ShopppingList articles={bestSellers} title='Nos meilleurs articles' />
          <CustomButtom
             handleClick={() => router.push("/shop")}
             background='white'

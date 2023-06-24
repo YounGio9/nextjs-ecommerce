@@ -27,15 +27,18 @@ function Presentation() {
                </span>
             </div>
             <article className='flex basis-[48%]  flex-col items-center border-r border-r-black'>
-               <div className='flex flex-col h-full items-center px-8 max-w-3xl lg:items-start lg:px-16'>
-                  <h1 className='my-6 text-4xl font-medium text-center px-1 lg:my-12 lg:text-6xl'>
+               <div className='flex flex-col h-auto items-center px-8 max-w-3xl lg:items-start lg:px-16'>
+                  <h1 className='my-6 text-4xl font-medium text-center lg:my-12 lg:text-7xl lg:text-left'>
                      Es-tu prêt à connaître l’effet Wow du club ?
                   </h1>
                   <p className='text-lg text-center inline lg:text-2xl lg:text-left'>
                      Ton sac a partir de &nbsp;
                      <span className='font-semibold'>15,99 €/mois</span>
                   </p>
-                  <a href='# ' className='my-12 flex justify-center w-full'>
+                  <a
+                     href='# '
+                     className='my-12 flex justify-center lg:justify-start w-full'
+                  >
                      <CustomButtom
                         background='yellow'
                         color='black'
@@ -58,7 +61,13 @@ function Presentation() {
                   </div>
                   <div className='flex relative basis-1/2 ml-4 lg:basis-1/3'>
                      <span>
-                        <Image src={cover.src} alt='' width={"1000"} height='1000' />
+                        <Image
+                           src={cover.src}
+                           alt=''
+                           width={"1000"}
+                           height='1000'
+                           className='w-full h-auto'
+                        />
                      </span>
                   </div>
                </div>

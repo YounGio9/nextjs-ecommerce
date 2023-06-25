@@ -5,10 +5,11 @@ import User from "@/assets/svg/User"
 import { useBannerContext } from "@/contexts/BannerContext"
 import Link from "next/link"
 import React from "react"
-import CustomButtom from "../CustomButtom"
+import CustomButton from "../CustomButton"
 import SpecialBanner from "./SpecialBanner"
 import Redirect from "@/assets/svg/Redirect"
 import { FaBars } from "react-icons/fa"
+import { usePathname } from "next/navigation"
 
 /**
  * Banner Component that include navigation links and website logo
@@ -21,6 +22,10 @@ function Banner(): React.JSX.Element {
       { name: "Le blog", link: "blog" },
    ]
 
+   const actualPath = usePathname()
+
+   console.log(actualPath)
+
    const { menuOpen, toggleMenu } = useBannerContext()
    return (
       <nav
@@ -28,7 +33,7 @@ function Banner(): React.JSX.Element {
             menuOpen
                ? "fixed bg-white w-full h-screen z-50 lg:static lg:h-fit pt-10 lg:pt-0"
                : ""
-         }`}
+         } ${actualPath.includes("commander") && "hidden"}`}
       >
          <div className='relative flex justify-between items-center lg:text-lg lg:py-5 lg:px-6 lg:mt-0 px-4 pb-4'>
             {menuOpen ? (
@@ -67,16 +72,16 @@ function Banner(): React.JSX.Element {
                ))}
             </div>
             <div className='flex relative items-center ml-2'>
-               <CustomButtom color='black' background='white'>
+               <CustomButton color='black' background='white'>
                   <div className='flex flex-row items-center gap-x-2'>
                      <User />
                      <span className='hidden lg:block'>Espace membre</span>
                   </div>
-               </CustomButtom>
+               </CustomButton>
             </div>
          </div>
          <div
-            className={`flex z-50 flex-col gap-y-9 items-center py-24 w-full h-screen bg-swag-yellow border-t lg:hidden ${
+            className={`flex z-50 flex-col gap-y-9 items-center py-24 w-full h-screen bg-luxury-green border-t lg:hidden ${
                menuOpen ? "" : "hidden"
             }`}
          >
@@ -91,9 +96,9 @@ function Banner(): React.JSX.Element {
                   <Redirect />
                </Link>
             ))}
-            {/* <CustomButtom color='white' background='red'>
+            {/* <CustomButton color='white' background='red'>
                Espace membre
-            </CustomButtom> */}
+            </CustomButton> */}
          </div>
          <SpecialBanner />
       </nav>

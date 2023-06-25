@@ -3,7 +3,7 @@ import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from "swiper"
 import Image from "next/image"
-import CustomButtom from "@/components/CustomButtom"
+import CustomButton from "@/components/CustomButton"
 import ShopppingList from "@/components/ShoppingList"
 import { bestSellers } from "../../../db/bestSellers"
 import { useRouter } from "next/navigation"
@@ -25,6 +25,11 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
       (article) => (article.id as number) === bagId
    ) as Article
    const router = useRouter()
+
+   const handleClick = () => {
+      localStorage.setItem("article", JSON.stringify(article))
+      router.push("/commander")
+   }
    return (
       <>
          <div className='flex flex-col lg:flex-row'>
@@ -46,12 +51,12 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                            className=' flex items-center justify-center mt-8'
                         >
                            <Image
-                              width='200'
+                              width='400'
                               key={img.cover}
-                              height='100'
+                              height='400'
                               src={img.cover}
                               alt={""}
-                              className='h-auto w-[200px]'
+                              className='h-auto w-[200px] lg:w-[350px]'
                            />
                         </SwiperSlide>
                      ))}
@@ -65,7 +70,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                      Ton nouveau sac s’appelle <br />
                      <strong className='font-semibold'> {article.name} </strong>
                   </span>
-                  <p className='mt-2 bg-swag-yellow'>
+                  <p className='mt-2 bg-luxury-green'>
                      <span className='text-3xl font-bold'>37,90&nbsp;€</span>
                      <span className='font-semibold'>/mois engagement 20 mois</span>
                   </p>
@@ -283,9 +288,13 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                         <div className='font-medium'>Garantie toute la location</div>
                      </li>
                   </ul>
-                  <CustomButtom background='yellow' color='black'>
+                  <CustomButton
+                     background='yellow'
+                     handleClick={handleClick}
+                     color='black'
+                  >
                      Je commande
-                  </CustomButtom>
+                  </CustomButton>
                </div>
             </div>
          </div>
@@ -299,26 +308,26 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                   <div className='relative w-full h-auto lg:hidden overflow-hidden'>
                      <Image
                         src={cover.src}
-                        width={"1000"}
-                        height={"1000"}
+                        width={"200"}
+                        height={"200"}
                         className='w-full h-auto'
                         alt='side image'
                      />
                   </div>
                   <div className='flex flex-col gap-x-9 lg:flex-row'>
                      <div className='flex justify-center gap-x-3 my-9 lg:hidden'>
-                        {/* <CustomButtom background='yellow' color='black'>
+                        {/* <CustomButton background='yellow' color='black'>
                            Si tu le casses
-                        </CustomButtom> */}
+                        </CustomButton> */}
 
-                        <CustomButtom background='yellow' color='black'>
+                        <CustomButton background='yellow' color='black'>
                            Si on te le voles
-                        </CustomButtom>
+                        </CustomButton>
                      </div>
                      <article className='transition-all duration-150 lg:opacity-100 lg:visible'>
                         <p className='hidden mb-5 text-2xl text-white lg:block'>
-                           Si tu le
-                           <span className='font-bold text-yellow'>casses</span>
+                           Si tu le &nbsp;
+                           <span className='font-bold '>casses</span>
                         </p>
                         <div className='flex relative flex-col-reverse'>
                            <div className=''></div>
@@ -364,13 +373,13 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
             articles={bestSellers.slice().splice(0, 4)}
          />
          <div className='flex justify-center mb-6'>
-            <CustomButtom
+            <CustomButton
                color='black'
                background='yellow'
                handleClick={() => router.push("/shop")}
             >
                Voir tous nos sacs
-            </CustomButtom>
+            </CustomButton>
          </div>
          <Knowing />
       </>

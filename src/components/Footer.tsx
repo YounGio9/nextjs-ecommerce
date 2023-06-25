@@ -1,10 +1,11 @@
 "use client"
 import React from "react"
 import { BsChevronDown, BsChevronRight, BsInstagram, BsWhatsapp } from "react-icons/bs"
-import CustomButtom from "./CustomButtom"
+import CustomButton from "./CustomButton"
 import logo from "../assets/logo.jpg"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 interface menu {
    name: string
@@ -49,8 +50,14 @@ function Footer() {
          ],
       },
    ]
+
+   const actualPath = usePathname()
    return (
-      <footer className='w-full bg-swag-yellow flex flex-col font-bold lg:px-28 lg:pb-6 text-lg'>
+      <footer
+         className={`w-full bg-luxury-green flex flex-col font-bold lg:px-28 lg:pb-6 text-lg ${
+            actualPath.includes("commander") && "hidden"
+         }`}
+      >
          <div className='flex flex-col lg:flex-row'>
             <div className='items-center flex justify-center w-full'>
                <Image
@@ -129,12 +136,12 @@ function Footer() {
                   Suivez nous dès maintenant
                </span>
                <div className='flex gap-5'>
-                  <CustomButtom color='black' background='white' rounded>
+                  <CustomButton color='black' background='white' rounded>
                      <BsInstagram size={22} />
-                  </CustomButtom>
-                  <CustomButtom color='black' background='white' rounded>
+                  </CustomButton>
+                  <CustomButton color='black' background='white' rounded>
                      <BsWhatsapp size={22} />
-                  </CustomButtom>
+                  </CustomButton>
                </div>
             </div>
          </div>

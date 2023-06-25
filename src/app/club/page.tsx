@@ -33,7 +33,7 @@ function Club() {
                      nous sommes persuadés que la vraie valeur de ton sac réside dans
                      l’utilisation que tu en fais.
                   </p>
-                  <p className='mt-6 font-semibold text-yellow'>
+                  <p className='mt-6 font-semibold text-luxury-green'>
                      La vraie valeur de ton sac, c’est toi !
                   </p>
                   <p>
@@ -47,7 +47,7 @@ function Club() {
                   {/* <p>
                      Au lieu de t’expliquer pourquoi il est cool de louer son smartphone,
                      nous allons t’expliquer{" "}
-                     <span className='font-semibold text-yellow'>
+                     <span className='font-semibold text-luxury-green'>
                         pourquoi il est absurde de l’acheter.
                      </span>
                   </p> */}

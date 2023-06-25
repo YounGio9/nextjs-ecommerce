@@ -30,7 +30,7 @@ function Knowing() {
                      avec l’achat !
                   </h2>
                   <a href='/club'>
-                     <p className='inline py-1 pt-2 text-lg font-medium bg-swag-yellow'>
+                     <p className='inline py-1 pt-2 text-lg font-medium bg-luxury-green'>
                         Voir la suite
                      </p>
                   </a>
@@ -53,7 +53,7 @@ function Knowing() {
                      actualités du moment. Servies sur un plateau !
                   </h2>
                   <a href='/club'>
-                     <p className='inline py-1 pt-2 text-lg font-medium bg-swag-yellow'>
+                     <p className='inline py-1 pt-2 text-lg font-medium bg-luxury-green'>
                         Voir la suite
                      </p>
                   </a>

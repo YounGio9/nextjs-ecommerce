@@ -3,7 +3,7 @@
 import { types } from "@/helpers"
 import React, { useState } from "react"
 import Article from "./Article"
-import CustomButtom from "./CustomButtom"
+import CustomButton from "./CustomButton"
 
 interface Props {
    articles: types.Article[]
@@ -30,14 +30,14 @@ function ShopppingList({ articles, title, categories }: Props) {
             {!!categories && (
                <div className='flex gap-6'>
                   {categories?.map((category) => (
-                     <CustomButtom
+                     <CustomButton
                         handleClick={(e) => setActiveCategory(category)}
                         key={category}
                         background='white'
                         color='black'
                      >
                         {category}
-                     </CustomButtom>
+                     </CustomButton>
                   ))}
                </div>
             )}

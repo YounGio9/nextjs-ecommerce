@@ -11,7 +11,7 @@ function SpecialBanner(): React.JSX.Element {
 
    return (
       <div
-         className={`py-3 min-h-[3.25rem] border-y-[1px] bg-swag-yellow border-y-black ${
+         className={`py-3 min-h-[3.25rem] border-y-[1px] bg-luxury-green border-y-black ${
             menuOpen ? "hidden" : ""
          }`}
       >

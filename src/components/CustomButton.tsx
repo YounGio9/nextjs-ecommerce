@@ -16,7 +16,7 @@ interface Props {
  * @param {Props}: Props of the Button
  * @return {React.JSX.Element}: Return CustomButton
  */
-function CustomButtom({ children, background, color, rounded, handleClick }: Props) {
+function CustomButton({ children, background, color, rounded, handleClick }: Props) {
    const getBgClass = (color: background): string => {
       switch (color) {
          case "red":
@@ -24,7 +24,7 @@ function CustomButtom({ children, background, color, rounded, handleClick }: Pro
          case "white":
             return "bg-white"
          case "yellow":
-            return "bg-swag-yellow"
+            return "bg-luxury-green"
          case "blue":
             return "bg-cornflower-blue"
          default:
@@ -50,4 +50,4 @@ function CustomButtom({ children, background, color, rounded, handleClick }: Pro
    )
 }
 
-export default CustomButtom
+export default CustomButton

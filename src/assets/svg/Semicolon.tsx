@@ -14,7 +14,7 @@ function Semicolon() {
          className='mt-2 w-6'
       >
          <circle cx='6' cy='6' r='4.5' fill='#000' stroke='#000'></circle>
-         <circle cx='5' cy='5' r='4.5' fill='#FFF95F' stroke='#000'></circle>
+         <circle cx='5' cy='5' r='4.5' fill='#a9d110' stroke='#000'></circle>
       </svg>
    )
 }

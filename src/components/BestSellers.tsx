@@ -1,9 +1,8 @@
 "use client"
-import { types } from "@/helpers"
 import { useRouter } from "next/navigation"
-import React, { useEffect } from "react"
+import React from "react"
 import { bestSellers } from "../db/bestSellers"
-import CustomButtom from "./CustomButtom"
+import CustomButton from "./CustomButton"
 import ShopppingList from "./ShoppingList"
 
 /**
@@ -12,23 +11,20 @@ import ShopppingList from "./ShoppingList"
  */
 function BestSales(): React.JSX.Element {
    const router = useRouter()
-   const [articles, setArticles] = React.useState<types.Article[]>([])
-
-   useEffect(() => {
-      bestSellers.splice(0, 2)
-      setArticles(bestSellers)
-   }, [])
 
    return (
       <>
-         <ShopppingList articles={articles} title='Nos meilleurs articles' />
-         <CustomButtom
+         <ShopppingList
+            articles={bestSellers.slice().splice(0, 4)}
+            title='Nos meilleurs articles'
+         />
+         <CustomButton
             handleClick={() => router.push("/shop")}
             background='white'
             color='black'
          >
             Voir tous nos articles
-         </CustomButtom>
+         </CustomButton>
          <p className='mb-12'></p>
       </>
    )

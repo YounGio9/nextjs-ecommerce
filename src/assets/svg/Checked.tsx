@@ -22,7 +22,7 @@ function Checked() {
          ></path>
          <path
             d='m1 11.267 3-2.934 6 4.4S16.6 4.667 29.5 1L31 3.933S16.9 10.387 10 23L1 11.267Z'
-            fill='#FFFD70'
+            fill='#a9d110'
             stroke='#000'
             strokeMiterlimit='10'
             strokeLinecap='square'

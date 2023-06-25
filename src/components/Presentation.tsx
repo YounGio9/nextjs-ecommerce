@@ -3,7 +3,7 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import React from "react"
 import cover from "../assets/swag-cover.jpg"
-import CustomButtom from "./CustomButtom"
+import CustomButton from "./CustomButton"
 
 /**
  * This component is the first component of the website
@@ -36,13 +36,13 @@ function Presentation() {
                      <span className='font-semibold'>15,99 €/mois</span>
                   </p>
                   <div className='my-12 flex justify-center lg:justify-start w-full'>
-                     <CustomButtom
+                     <CustomButton
                         background='yellow'
                         color='black'
                         handleClick={() => router.push("/shop")}
                      >
-                        <span className=' mb-14'>Choisis le sac de tes reves</span>
-                     </CustomButtom>
+                        <span className=' mb-14'>Choisis le sac de tes rêves</span>
+                     </CustomButton>
                   </div>
                </div>
                <hr className='h-0 border-t w-full border-black'></hr>
@@ -52,9 +52,9 @@ function Presentation() {
                         Ton sac
                      </h3>
                      <p className='mb-1 text-lg lg:mb-5 lg:text-2xl'>Livré en 48h</p>
-                     <CustomButtom color='black' background='white'>
+                     <CustomButton color='black' background='white'>
                         <span className='font-semibold text-base'>dès 30,99 €/mois</span>
-                     </CustomButtom>
+                     </CustomButton>
                   </div>
                   <div className='flex relative basis-1/2 ml-4 lg:basis-1/3'>
                      <span>
@@ -70,7 +70,7 @@ function Presentation() {
                </div>
             </article>
          </div>
-         <div className='flex flex-wrap gap-x-10 gap-y-6 justify-center py-6 text-center bg-swag-yellow border-y border-y-black lg:gap-x-20'>
+         <div className='flex flex-wrap gap-x-10 gap-y-6 justify-center py-6 text-center bg-luxury-green border-y border-y-black lg:gap-x-20'>
             <div className='flex flex-col items-center'>
                <svg
                   width='36'
@@ -98,7 +98,7 @@ function Presentation() {
                <p className='text-sm lg:text-lg'>
                   <span className='font-semibold'>Assurance incluse</span>
                   <br />
-                  Casse &amp; Vol
+                  Déchirure &amp; Vol
                </p>
             </div>
             <div className='flex flex-col items-center'>

@@ -14,7 +14,6 @@ export const bestSellers: types.Article[] = [
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],
       price: "39, 99 €",
       apport: "+ 99,00 € d’apport",
-      isNew: true,
       categories: ["Louis Vuitton"],
    },
    {
@@ -24,7 +23,6 @@ export const bestSellers: types.Article[] = [
       colors: ["#41464C", "#60AEE1", "#F5C6BD", "#F5F6EF"],
       price: "39, 99 €",
       apport: "+ 99,00 € d’apport",
-      isNew: true,
       categories: ["Louis Vuitton"],
    },
    {
@@ -34,7 +32,6 @@ export const bestSellers: types.Article[] = [
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],
       price: "39, 99 €",
       apport: "+ 99,00 € d’apport",
-      isNew: true,
       categories: ["Louis Vuitton"],
    },
    {
@@ -44,7 +41,6 @@ export const bestSellers: types.Article[] = [
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],
       price: "39, 99 €",
       apport: "+ 99,00 € d’apport",
-      isNew: false,
       categories: ["Louis Vuitton"],
    },
    {
@@ -54,7 +50,6 @@ export const bestSellers: types.Article[] = [
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],
       price: "39, 99 €",
       apport: "+ 99,00 € d’apport",
-      isNew: false,
       categories: ["Louis Vuitton"],
    },
    {
@@ -64,7 +59,7 @@ export const bestSellers: types.Article[] = [
       colors: ["#41464C", "#60AEE1", "#F5C6BD"],
       price: "39, 99 €",
       apport: "+ 99,00 € d’apport",
-      isNew: false,
+
       categories: ["Louis Vuitton"],
    },
 ]

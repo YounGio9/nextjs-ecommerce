@@ -1,6 +1,6 @@
 import Argument from "@/components/Argument"
 import BestSales from "@/components/BestSellers"
-import CustomButtom from "@/components/CustomButtom"
+import CustomButton from "@/components/CustomButton"
 import Presentation from "@/components/Presentation"
 import React from "react"
 import Knowing from "@/components/Knowing"
@@ -58,16 +58,16 @@ export default function Home(): React.JSX.Element {
                      <Image
                         src={logo}
                         alt=''
-                        width={200}
-                        height={200}
+                        width={600}
+                        height={600}
                         className='w-[150px] -mt-10 h-auto hidden lg:block'
                      />
                      <div className='flex justify-center items-center mt-6 w-16 h-0 lg:hidden'>
                         <Image
                            src={logo}
                            alt=''
-                           width={200}
-                           height={200}
+                           width={600}
+                           height={600}
                            className='w-100 h-auto'
                         />
                      </div>
@@ -85,7 +85,7 @@ export default function Home(): React.JSX.Element {
                         ))}
 
                      <a href='/smartphone'>
-                        <button className='transition-all py-2.5 px-6 rounded-full relative active:shadow-[0_0_black] active:translate-x-1 active:translate-y-1 bg-swag-yellow has-hover:hover:text-white has-hover:hover:bg-cornflower-blue active:text-white active:bg-cornflower-blue hidden text-lg font-medium whitespace-nowrap lg:inline-block shadow-[4px_4px_black] border border-black'>
+                        <button className='transition-all py-2.5 px-6 rounded-full relative active:shadow-[0_0_black] active:translate-x-1 active:translate-y-1 bg-luxury-green has-hover:hover:text-white has-hover:hover:bg-cornflower-blue active:text-white active:bg-cornflower-blue hidden text-lg font-medium whitespace-nowrap lg:inline-block shadow-[4px_4px_black] border border-black'>
                            <div className=''>Je choisis mon sac</div>
                         </button>
                      </a>
@@ -95,9 +95,9 @@ export default function Home(): React.JSX.Element {
          </div>
 
          <div className='my-12 lg:hidden'>
-            <CustomButtom background='yellow' color='black'>
+            <CustomButton background='yellow' color='black'>
                <span className='font-semibold'> Je choisis mon sac</span>
-            </CustomButtom>
+            </CustomButton>
          </div>
          <Knowing />
       </main>

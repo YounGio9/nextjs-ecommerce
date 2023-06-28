@@ -2,7 +2,8 @@
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import React from "react"
-import cover from "../assets/swag-cover.jpg"
+import cover from "../assets/accueil.png"
+import yourbag from "../assets/accueil-min.png"
 import CustomButton from "./CustomButton"
 
 /**
@@ -22,7 +23,7 @@ function Presentation() {
                      width='1100'
                      height={"600"}
                      alt=''
-                     className='w-full h-auto object-top object-cover'
+                     className='w-full h-full'
                   />
                </span>
             </div>
@@ -59,7 +60,7 @@ function Presentation() {
                   <div className='flex relative basis-1/2 ml-4 lg:basis-1/3'>
                      <span>
                         <Image
-                           src={cover.src}
+                           src={yourbag.src}
                            alt=''
                            width={"200"}
                            height='200'

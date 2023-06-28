@@ -7,7 +7,7 @@ import CheckoutContextProvider from "../../contexts/CheckoutContext"
  * @return {React.JSX.Element}
  */
 function layout({ children }: { children: React.ReactNode }) {
-   return <CheckoutContextProvider totalSteps={4}> {children} </CheckoutContextProvider>
+   return <CheckoutContextProvider totalSteps={2}> {children} </CheckoutContextProvider>
 }
 
 export default layout

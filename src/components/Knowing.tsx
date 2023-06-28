@@ -1,6 +1,7 @@
 import React from "react"
-import swag from "../assets/swag-cover.jpg"
+import clubhistory from "../assets/clubhistory.jpg"
 import Image from "next/image"
+import ourblog from "../assets/ourblog.png"
 
 /**
  * Presentation of club & blog page
@@ -13,10 +14,10 @@ function Knowing() {
             Faisons plus ample connaissance
          </h1>
          <div className='flex flex-col gap-9 px-9 mt-9 max-w-6xl lg:flex-row lg:mt-14'>
-            <div className='border bg-white border-1 border-black rounded-lg overflow-hidden'>
+            <div className='border  lg:w-[600px] bg-white border-1 border-black rounded-lg overflow-hidden'>
                <div className=''>
                   <Image
-                     src={swag.src}
+                     src={clubhistory.src}
                      width={"1000"}
                      height={"1000"}
                      className='w-full h-auto'
@@ -36,10 +37,10 @@ function Knowing() {
                   </a>
                </div>
             </div>
-            <div className='border bg-white border-1 h-full border-black rounded-lg overflow-hidden'>
+            <div className='border lg:w-[600px] bg-white border-1 h-full border-black rounded-lg overflow-hidden'>
                <div>
                   <Image
-                     src={swag.src}
+                     src={ourblog.src}
                      width={"1000"}
                      height={"1000"}
                      className='w-full h-auto'

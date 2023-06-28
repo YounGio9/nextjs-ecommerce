@@ -199,7 +199,7 @@ function Presentation() {
                <p className='text-sm lg:text-lg'>
                   <span className='font-semibold'>Moins de gaspillage</span>
                   <br />
-                  électronique
+                  de luxe
                </p>
             </div>
          </div>

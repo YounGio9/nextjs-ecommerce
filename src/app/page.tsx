@@ -84,7 +84,7 @@ export default function Home(): React.JSX.Element {
                            </div>
                         ))}
 
-                     <a href='/smartphone'>
+                     <a href='/bags'>
                         <button className='transition-all py-2.5 px-6 rounded-full relative active:shadow-[0_0_black] active:translate-x-1 active:translate-y-1 bg-luxury-green has-hover:hover:text-white has-hover:hover:bg-cornflower-blue active:text-white active:bg-cornflower-blue hidden text-lg font-medium whitespace-nowrap lg:inline-block shadow-[4px_4px_black] border border-black'>
                            <div className=''>Je choisis mon sac</div>
                         </button>

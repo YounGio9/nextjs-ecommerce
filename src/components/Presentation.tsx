@@ -15,8 +15,8 @@ function Presentation() {
    const router = useRouter()
    return (
       <section className='w-full'>
-         <div className='flex flex-col grow lg:flex-row-reverse'>
-            <div className='lg:flex grow'>
+         <div className='flex w-full flex-col grow lg:flex-row-reverse'>
+            <div className='lg:flex'>
                <span className='w-full'>
                   <Image
                      src={cover.src}

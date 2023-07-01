@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image"
 import React from "react"
-
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination } from "swiper"
 import image from "../../assets/luxuryBag.png"
 import clubgroup from "../../assets/clubgroup.png"
 import Proof from "@/components/Proof"
@@ -72,7 +74,7 @@ function Club() {
                   <p className='lg:text-lg'>
                      Cela faisait dix ans qu’elles étaient dans le luxe.{" "}
                      <br className='hidden lg:block' />
-                     Les sacs louis vuitton,...
+                     Les sacs Louis Vuitton,...
                      <br />
                      Cela leur parlait.
                   </p>
@@ -150,6 +152,24 @@ function Club() {
                {reasons.map((reason, idx) => (
                   <Proof {...reason} number={idx + 1} key={reason.conclusion} />
                ))}
+            </div>
+
+            <div className='w-full mt-6'>
+               <Swiper
+                  modules={[Navigation, Pagination]}
+                  spaceBetween={50}
+                  slidesPerView={1}
+                  pagination={{ clickable: true }}
+               >
+                  {reasons.map((reason, idx) => (
+                     <SwiperSlide
+                        key={idx}
+                        className=' flex items-center justify-center mt-8'
+                     >
+                        <Proof {...reason} number={idx + 1} key={reason.conclusion} />
+                     </SwiperSlide>
+                  ))}
+               </Swiper>
             </div>
          </section>
       </>

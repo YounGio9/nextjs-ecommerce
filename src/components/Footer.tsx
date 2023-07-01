@@ -45,7 +45,7 @@ function Footer() {
          name: "rental",
          label: "Location",
          options: [
-            { name: "Location sacs de louis vuitton", path: "/shop" },
+            { name: "Location sacs de Louis Vuitton", path: "/shop" },
             { name: "Location sac a bas prix", path: "/shop" },
          ],
       },

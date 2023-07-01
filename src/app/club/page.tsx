@@ -10,61 +10,97 @@ import clubgroup from "../../assets/clubgroup.png"
  */
 function Club() {
    return (
-      <section className='flex justify-center bg-cornflower-blue'>
-         <article className='flex flex-col items-center py-16 max-w-7xl text-white lg:py-24'>
-            <div className='w-full flex items-center justify-center'>
+      <>
+         <section className='flex items-center justify-center'>
+            <div className='flex flex-col lg:flex-row gap-x-8 px-14 w-full max-w-lg lg:mt-4 lg:max-w-[82rem]'>
                <Image
                   alt=''
                   src={clubgroup.src}
                   width='800'
                   height={"600"}
-                  className=' w-80 sm:w-96 md:w-[550px] lg:w-[600px] mb-6'
+                  className=' w-80 sm:w-96 md:w-[450px] lg:w-[580px] mb-6'
                />
-            </div>
-            <p className='w-fit text-4xl font-bold text-center lg:mb-12 lg:text-6xl lg:whitespace-nowrap'>
-               Sérieux,
-               <br className='lg:hidden' /> à quoi ça sert <br />
-               d’acheter son sac ?
-            </p>
-            <div className='flex flex-col w-full lg:flex-row-reverse'>
-               <div className='relative my-8 w-full h-auto lg:basis-4/5 lg:my-0 lg:h-80'>
-                  {" "}
-                  <Image
-                     alt=''
-                     src={image.src}
-                     width='1000'
-                     height='1000'
-                     className='w-80 h-auto lg:ml-6 -rotate-6'
-                  />
+               <div className='flex flex-col items-center text-center lg:basis-1/2 lg:items-start lg:mt-10 lg:text-left'>
+                  <h2 className='my-2 text-2xl font-medium lg:my-0 lg:mb-2 lg:text-3xl lg:font-bold'>
+                     C’est l’histoire...
+                  </h2>
+                  <p className='lg:text-lg'>
+                     De 4 filles dans le vent, passionnés de mode et de luxe , qui
+                     voyaient augmenter le prix de leurs sacs à main plus vite que celui
+                     de leurs loyers.
+                  </p>
+                  <h2 className='my-2 text-2xl font-medium lg:my-0 lg:mt-12 lg:mb-2 lg:text-3xl lg:font-bold'>
+                     Elles ne voulaient pas débourser 1000 €
+                  </h2>
+                  <p className='lg:text-lg'>
+                     La première lance :<br className='lg:hidden' /> « Et si on n’achetait
+                     plus son sac ».
+                     <br />
+                     Ni une ni deux, après des échanges passionnés, elles décident
+                     d’imaginer un modèle où l’on paierait uniquement l’usage que l’on
+                     fait de son sac à main.
+                  </p>
+                  <h2 className='my-2 text-2xl font-medium lg:my-0 lg:mt-12 lg:mb-2 lg:text-3xl lg:font-bold'>
+                     Cela tombait bien !
+                  </h2>
+                  <p className='lg:text-lg'>
+                     Cela faisait dix ans qu’elles étaient dans le luxe.{" "}
+                     <br className='hidden lg:block' />
+                     Les sacs louis vuitton,...
+                     <br />
+                     Cela leur parlait.
+                  </p>
                </div>
-               <div className='px-7 lg:px-0'>
-                  <p>Chez LuxuryBag,</p>
-                  <p>
-                     nous sommes persuadés que la vraie valeur de ton sac réside dans
-                     l’utilisation que tu en fais.
-                  </p>
-                  <p className='mt-6 font-semibold text-luxury-green'>
-                     La vraie valeur de ton sac, c’est toi !
-                  </p>
-                  <p>
-                     C’est pourquoi, nous avons imaginé une solution pour ceux qui pensent
-                     comme nous.
-                  </p>
-                  <p className='my-6'>
-                     Posséder n’est plus une fin en soi, et surtout quand on parle de
-                     mode.
-                  </p>
-                  {/* <p>
+            </div>
+         </section>
+
+         <section className='flex justify-center bg-cornflower-blue'>
+            <article className='flex flex-col items-center py-16 max-w-7xl text-white lg:py-24'>
+               <p className='w-fit text-4xl font-bold text-center lg:mb-12 lg:text-6xl lg:whitespace-nowrap'>
+                  Sérieux,
+                  <br className='lg:hidden' /> à quoi ça sert <br />
+                  d’acheter son sac ?
+               </p>
+               <div className='flex flex-col w-full lg:flex-row-reverse'>
+                  <div className='relative my-8 w-full h-auto lg:basis-4/5 lg:my-0 lg:h-80'>
+                     {" "}
+                     <Image
+                        alt=''
+                        src={image.src}
+                        width='1000'
+                        height='1000'
+                        className='w-80 h-auto lg:ml-6 -rotate-6'
+                     />
+                  </div>
+                  <div className='px-7 lg:px-0'>
+                     <p>Chez LuxuryGreen,</p>
+                     <p>
+                        nous sommes persuadés que la vraie valeur de ton sac réside dans
+                        l’utilisation que tu en fais.
+                     </p>
+                     <p className='mt-6 font-semibold text-luxury-green'>
+                        La vraie valeur de ton sac, c’est toi !
+                     </p>
+                     <p>
+                        C’est pourquoi, nous avons imaginé une solution pour ceux qui
+                        pensent comme nous.
+                     </p>
+                     <p className='my-6'>
+                        Posséder n’est plus une fin en soi, et surtout quand on parle de
+                        mode.
+                     </p>
+                     {/* <p>
                      Au lieu de t’expliquer pourquoi il est cool de louer son smartphone,
                      nous allons t’expliquer{" "}
                      <span className='font-semibold text-luxury-green'>
                         pourquoi il est absurde de l’acheter.
                      </span>
                   </p> */}
+                  </div>
                </div>
-            </div>
-         </article>
-      </section>
+            </article>
+         </section>
+      </>
    )
 }
 

@@ -16,7 +16,7 @@ function Presentation() {
    return (
       <section className='w-full'>
          <div className='flex flex-col grow lg:flex-row-reverse'>
-            <div>
+            <div className='lg:flex grow'>
                <span className='w-full'>
                   <Image
                      src={cover.src}

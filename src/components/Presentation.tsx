@@ -20,10 +20,10 @@ function Presentation() {
                <span className='w-full'>
                   <Image
                      src={cover.src}
-                     width='1100'
-                     height={"600"}
+                     width='2000'
+                     height={"1500"}
                      alt=''
-                     className='w-auto h-full'
+                     className='w-auto h-full object-cover'
                   />
                </span>
             </div>

@@ -22,21 +22,21 @@ function FAQ() {
       },
       {
          id: 3,
-         question: "Les smartphones sont ils garantis ?",
+         question: "Les sacs sont ils garantis ?",
          answer:
-            "Oui, durant toute la période de location. Si votre appareil rencontre la moindre panne ou dysfonctionnement, nous l'échangerons très rapidement, sans frais 🚑",
+            "Oui, durant toute la période de location. Si votre sac rencontre la moindre panne , nous l'échangerons très rapidement, sans frais 🚑",
       },
       {
          id: 4,
          question: "Puis-je changer de sac ?",
          answer:
-            "Vous pouvez changer d'appareil à n'importe quel moment de votre abonnement. Le montant de votre location sera adapté à votre nouveau modèle choisi.",
+            "Vous pouvez changer de sac  à n'importe quel moment de votre abonnement. Le montant de votre location sera adapté à votre nouveau modèle choisi.",
       },
       {
          id: 5,
          question: "Devrais-je payer les frais de remise en état ?",
          answer:
-            "Non, nous ne facturons pas l’usure normale du smartphone (micro-rayures, traces d’utilisation…). Seule une casse non déclarée ou une usure anormale pourra faire l’objet d’une facturation. Si votre vitre de protection est cassée, n'hésitez pas à nous en demander une en remplacement.",
+            "Non, nous ne facturons pas l’usure normale du sac (micro-rayures, traces d’utilisation…). Seule une déchirure non déclarée ou une usure anormale pourra faire l’objet d’une facturation.",
       },
    ]
    return <Questions questions={questions} />

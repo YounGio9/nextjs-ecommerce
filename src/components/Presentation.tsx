@@ -29,7 +29,7 @@ function Presentation() {
             </div>
             <article className='flex basis-[48%]  flex-col items-center border-r border-r-black'>
                <div className='flex flex-col h-auto items-center px-8 max-w-3xl lg:items-start lg:px-16'>
-                  <h1 className='my-6 text-4xl font-medium text-center lg:my-12 lg:text-7xl lg:text-left'>
+                  <h1 className='my-8 text-4xl font-medium text-center lg:my-12 lg:text-7xl lg:text-left'>
                      Es-tu prêt à connaître l’effet Wow du club ?
                   </h1>
                   <p className='text-lg text-center inline lg:text-2xl lg:text-left'>

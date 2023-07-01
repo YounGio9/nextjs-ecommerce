@@ -6,6 +6,10 @@ import { Navigation, Pagination } from "swiper"
 import image from "../../assets/luxuryBag.png"
 import clubgroup from "../../assets/clubgroup.png"
 import Proof from "@/components/Proof"
+import SpecialBanner from "@/components/Banner/SpecialBanner"
+import lastClub from "../../assets/leclublast.png"
+import totalEconomy from "../../assets/totalEconomy.png"
+import parisDubai from "../../assets/paris-dubai.svg"
 
 /**
  * Club presenattion page
@@ -154,7 +158,7 @@ function Club() {
                ))}
             </div>
 
-            <div className='w-full mt-6'>
+            <div className='w-full lg:hidden mt-6'>
                <Swiper
                   modules={[Navigation, Pagination]}
                   spaceBetween={50}
@@ -170,6 +174,49 @@ function Club() {
                      </SwiperSlide>
                   ))}
                </Swiper>
+            </div>
+         </section>
+         <SpecialBanner
+            viewTexts={"TOO SMART TO BUY@".repeat(4).slice(0, -1).split("@")}
+         />
+
+         <section className='flex flex-col-reverse lg:flex-row'>
+            <div className='basis-1/2'>
+               <Image
+                  alt=''
+                  src={lastClub.src}
+                  width='1000'
+                  height={1000}
+                  className='h-auto w-full object-cover'
+               />
+            </div>
+            <div className='flex basis-1/2 items-end'>
+               <div className='flex flex-col items-center'>
+                  <p className='mt-14 mb-3 lg:mb-0 lg:text-lg'>Depuis le début,</p>
+                  <div className='px-12'>
+                     <Image
+                        alt=''
+                        src={totalEconomy.src}
+                        width='1000'
+                        height={1000}
+                        className='w-full h-auto'
+                     />
+                  </div>
+                  <p className='mb-12 text-2xl lg:mb-14 lg:text-4xl'>
+                     de CO² économisées*
+                  </p>
+                  <div className='ml-4 w-3/4 lg:ml-12 lg:w-2/3'>
+                     <Image width={1000} height='1000' alt='' src={parisDubai} />
+                  </div>
+                  <p className='my-7 lg:mt-5 lg:mb-20'>
+                     Soit l&apos;équivalent de{" "}
+                     <span className='font-semibold'>2000 allers-retours.</span>
+                  </p>
+                  <p className='flex justify-center items-center w-full h-7 text-xs text-white bg-[#61e9bd] lg:text-base'>
+                     *Etude de Décembre 2021 réalisée en partenariat avec
+                     <span className='font-semibold'> Kabaun</span>
+                  </p>
+               </div>
             </div>
          </section>
       </>

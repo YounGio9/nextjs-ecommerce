@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation"
 import Knowing from "@/components/Knowing"
 import { Article } from "@/helpers/types"
 import { types } from "@/helpers"
-import cover from "../../../assets/swag-cover.jpg"
+import cover from "../../../assets/replacement.png"
 import Checked from "@/assets/svg/Checked"
 import Failed from "@/assets/svg/Failed"
 
@@ -141,7 +141,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                         <strong className='font-semibold'>Une fois membre</strong> tu peux
                         changer de sac
                         <strong className='font-semibold'>
-                           &nbsp; sans apport tous les 20 mois.
+                           &nbsp; sans apport tous les mois.
                         </strong>
                      </span>
                   </div>
@@ -308,8 +308,8 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                   <div className='relative w-full h-auto lg:hidden overflow-hidden'>
                      <Image
                         src={cover.src}
-                        width={"200"}
-                        height={"200"}
+                        width={"600"}
+                        height={"600"}
                         className='w-full h-auto'
                         alt='side image'
                      />
@@ -327,7 +327,7 @@ function ArticlePage({ params }: { params: { bagId: string } }) {
                      <article className='transition-all duration-150 lg:opacity-100 lg:visible'>
                         <p className='hidden mb-5 text-2xl text-white lg:block'>
                            Si tu le &nbsp;
-                           <span className='font-bold '>casses</span>
+                           <span className='font-bold '>déchire</span>
                         </p>
                         <div className='flex relative flex-col-reverse'>
                            <div className=''></div>

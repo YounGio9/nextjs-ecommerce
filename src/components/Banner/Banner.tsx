@@ -100,7 +100,13 @@ function Banner(): React.JSX.Element {
                Espace membre
             </CustomButton> */}
          </div>
-         <SpecialBanner />
+         <SpecialBanner
+            viewTexts={[
+               "GARANTIE TOUTE LA LOCATION",
+               "LIVRAISON 24H",
+               "ASSURANCE INCLUSE",
+            ]}
+         />
       </nav>
    )
 }

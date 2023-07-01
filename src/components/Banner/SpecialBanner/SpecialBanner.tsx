@@ -6,7 +6,7 @@ import View from "./View"
  * A Special Banner just at bottom of Banner
  * @return {React.JSX.Element}: Shows benefits of the market.
  */
-function SpecialBanner(): React.JSX.Element {
+function SpecialBanner({ viewTexts }: { viewTexts: string[] }): React.JSX.Element {
    const { menuOpen } = useBannerContext()
 
    return (
@@ -19,7 +19,7 @@ function SpecialBanner(): React.JSX.Element {
             {Array(6)
                .fill(0)
                .map((_, idx) => (
-                  <View key={idx} />
+                  <View key={idx} texts={viewTexts} />
                ))}
          </div>
       </div>

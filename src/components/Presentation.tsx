@@ -23,7 +23,7 @@ function Presentation() {
                      width='1100'
                      height={"600"}
                      alt=''
-                     className=' object-cover'
+                     className='w-auto h-full'
                   />
                </span>
             </div>
